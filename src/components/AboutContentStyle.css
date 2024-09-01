@@ -1,0 +1,113 @@
+.about {
+    width: 100%;
+    margin: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.about .left {
+    text-align: center;
+    margin: auto;
+    padding: 1rem;
+    max-width: 350px;
+    /* Shift the left div 50px to the left */
+    margin-left:50px; /* Adjust the value as needed */
+}
+
+.about .left p {
+    margin: 1.2rem 0;
+    color: white;
+}
+
+.about .right {
+    max-width: 700px;
+    /* Shift the right div 50px to the right */
+    margin-right: 50px; /* Adjust the value as needed */
+}
+
+.right .img-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: relative;
+    align-items: center;
+    text-align: center;
+}
+
+.right .img {
+    max-width: 90%;
+    border: 1px solid #333;
+}
+
+.right .top {
+    grid-column: 1/ span 8;
+    grid-row: 1;
+    padding-top: 30%;
+    z-index: 6;
+}
+
+.right .bottom {
+    grid-column: 4 / -1;
+    grid-row: 1;
+    z-index: 5;
+}
+
+.info {
+    width: 100%;
+    margin: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+    color: aliceblue;
+}
+
+.info-list ul {
+    border: 1px solid white;
+    align-items: center;
+    justify-content: left;
+    padding: 5px 100px;
+    list-style-type: none;
+}
+
+.info-list li {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    text-shadow: rgb(20, 20, 20) 2px 2px;
+    padding: 10px 0;
+    margin-bottom: 60px;
+    border-bottom: 1px solid #ccc;
+}
+
+.info-list li strong{
+    color: rgb(194, 174, 148);
+    text-shadow: rgb(20, 19, 19) 2px 1px;
+}
+
+@media  screen and (max-width:640px) {
+    .info-list ul {
+        border: 1px solid white;
+        align-items: center;
+        justify-content: left;
+        padding: 5px 10px;
+        list-style-type: none;
+    }
+    
+    .about .left {
+        text-align: center;
+        margin: auto;
+        padding: 1rem;
+        max-width: 500px;
+        /* Shift the left div 50px to the left */
+        margin-left:50px; /* Adjust the value as needed */
+    }
+    
+    .about .right {
+        max-width: 700px;
+        /* Shift the right div 50px to the right */
+        margin-right: 50px; /* Adjust the value as needed */
+    }
+}
